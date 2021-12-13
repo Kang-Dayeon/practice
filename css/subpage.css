@@ -167,6 +167,7 @@ hr{
     height:40px;
     border:1px solid #cccccc;
     font-size:13px;
+    color:black;
     background:url(../images/common/icon_arrow_gray_down.png) no-repeat right top;
     background-size:33px 33px;
     vertical-align:middle;
