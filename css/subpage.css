@@ -206,6 +206,11 @@ hr{
     font-size:13px;
     color:#fff;
 }
+.square-checkbox--captcha{
+    width:28px;
+    height:28px;
+    border:2px solid #969696;
+}
 .login{
     position:relative;
     z-index:1;
