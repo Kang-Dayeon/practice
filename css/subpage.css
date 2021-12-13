@@ -207,7 +207,7 @@ hr{
 }
 .login{
     position:relative;
-    z-index:10;
+    z-index:1;
     padding:21px 22px;
     margin:-4px 0 75px;
     height:258px;
