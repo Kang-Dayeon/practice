@@ -116,9 +116,9 @@
     display:none;
     background-color:#eaeaea;
 }
-.menu__2depth li{
-    padding:18px 15px 0 18px;
-    height:50px;
+.menu__2depth li a{
+    display:block;
+    padding:12px 15px 12px 18px;
     font-size:15px;
 }
 .menu__close{
