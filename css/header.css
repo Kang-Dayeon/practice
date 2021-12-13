@@ -1,0 +1,130 @@
+.header{
+    position:relative;
+    width:100%;
+    height:217px;
+    background-color:#e9e2e6;
+}
+.header__inner{
+    padding:15px 15px 0 15px;
+    height:87px;
+}
+.header__inner:after{
+    clear:both;
+    content:'';
+} 
+.navigation{
+    float:right;
+    width:23px;
+    height:23px;
+}
+.navigation img{
+    width:100%;
+}
+.gnb-wrap{
+    position:fixed;
+    top:0;
+    right:-9999px;
+    z-index:1;
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+    overflow-y:auto;
+    background-color:rgba(0, 0, 0, 0.3);
+    transition:0.3s;
+}
+.gnb-wrap.active{
+    right:0;
+}
+.gnb{
+    float:right;
+    width:305px;
+    min-height:100%;
+    overflow-y:auto;
+    background-color:#fff;
+}
+.gnb__top{
+    width:100%;
+    height:50px;
+    font-size:7px;
+}
+.gnb__top img{
+    width:36px;
+    vertical-align:middle;
+}
+.gnb__member{
+    height:50px;
+}
+.gnb__member:after{
+    clear:both;
+    content:'';
+}
+.gnb__login{
+    padding-top:15px;
+    float:left;
+    width:50%;
+    height:50px;
+    background-color:#db6a2e;
+    font-size:15px;
+    text-align:center;
+    color:#fff;
+    border-left:1px solid #e49563;
+}
+.gnb__login:hover,
+.gnb__login:focus{
+    color:#fff;
+}
+.gnb__login:first-child{
+    border:none;
+}
+.menu{
+    position:relative;
+    margin:11px 0 0;
+}
+.menu__anchor{
+    position:relative;
+    display:block;
+    padding:18px 15px 0 18px;
+    height:50px;
+    font-size:13px;
+}
+.menu__anchor:after{
+    position:absolute;
+    top:50%;
+    right:15px;
+    width:23px;
+    height:23px;
+    margin-top:-11px;
+    background:url(../images/common/icon_arrow_down.png) no-repeat 0 0;
+    background-size:23px 23px;
+    content:'';
+}
+.menu__item.active .menu__anchor:after{
+    position:absolute;
+    top:50%;
+    right:15px;
+    width:23px;
+    height:23px;
+    margin-top:-11px;
+    background:url(../images/common/icon_arrow_up.png) no-repeat 0 0;
+    background-size:23px 23px;
+    content:'';
+}
+.menu__item.active .menu__anchor{
+    color:#da692a;
+}
+.menu__2depth{
+    display:none;
+    background-color:#eaeaea;
+}
+.menu__2depth li{
+    padding:18px 15px 0 18px;
+    height:50px;
+    font-size:11px;
+}
+.menu__close{
+    display:block;
+    position:absolute;
+    top:16px;
+    right:18px;
+    width:23px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/import.css">
+    <title>Join</title>
+</head>
+<body>
+    <div class="wrap">
+        <div id="header" class="header">
+            <div class="header__inner">
+                <div class="navigation"><a href="#"><img src="./images/common/icon_menu.png" alt="전체메뉴"></a></div>
+            </div>
+            <div class="gnb-wrap">
+                <div class="gnb">
+                    <div class="gnb__top"><img src="./images/common/icon_global.png" alt="">English</div>
+                    <div class="gnb__member">
+                        <a href="#" class="gnb__login">로그인</a>
+                        <a href="#" class="gnb__login">회원가입</a>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__anchor">봉사단 소개</a>
+                            <ul class="menu__2depth">
+                                <li><a href="#">봉사단 개요</a></li>
+                                <li><a href="#">활동소개</a></li>
+                                <li><a href="#">활동실적</a></li>
+                                <li><a href="#">소개</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__anchor">소통참여</a>
+                            <ul class="menu__2depth">
+                                <li><a href="#">봉사단 개요</a></li>
+                                <li><a href="#">활동소개</a></li>
+                                <li><a href="#">활동실적</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__anchor">봉사단 모집</a>
+                            <ul class="menu__2depth">
+                                <li><a href="#">봉사단 개요</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__anchor">소식</a>
+                            <ul class="menu__2depth">
+                                <li><a href="#">봉사단 개요</a></li>
+                                <li><a href="#">활동소개</a></li>
+                                <li><a href="#">활동실적</a></li>
+                                <li><a href="#">소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__anchor">제증명 발급센터</a>
+                            <ul class="menu__2depth">
+                                <li><a href="#">봉사단 개요</a></li>
+                                <li><a href="#">활동소개</a></li>
+                                <li><a href="#">활동실적</a></li>
+                                <li><a href="#">소개</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="menu__close"><img src="./images/common/icon_close.png" alt="메뉴닫기"></a>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="content">
+            <div class="section">
+                <div class="section__inner">
+                    <div class="join">
+                        <div class="join__title">회원가입</div>
+                        <ul class="order">
+                            <li class="order__item"><img class="order__image" src="./images/common/icon_number_gray.png" alt="">이용약관</li>
+                            <li class="order__item"><img class="order__image" src="./images/common/icon_number2.png" alt="">정보입력</li>
+                            <li class="order__item"><img class="order__image" src="./images/common/icon_number_gray3.png" alt="">가입완료</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__inner">
+                    <hr class="line-top">
+                    <div class="join-form">
+                        <div class="join-form__item">
+                            <label for="id">아이디<span>*</span></label>
+                            <input class="text-box" id="id" type="text" placeholder="4 ~ 15자의 영문-숫자만 혼용만 가능">
+                        </div>
+                        <div class="join-form__item">
+                            <label for="password">비밀번호<span>*</span></label>
+                            <input class="text-box" id="password" type="password" placeholder="9 ~ 20자 이하, 영문-숫자-특수문자 조합">
+                        </div>
+                        <div class="join-form__item">
+                            <label for="passwordCheck">비밀번호확인<span>*</span></label>
+                            <input class="text-box" id="passwordCheck" type="password">
+                        </div>
+                        <div class="join-form__item">
+                            <label for="name">이름<span>*</span></label>
+                            <input class="text-box" id="name" type="text" placeholder="예) 홍길동">
+                        </div>
+                        <div class="join-form__item">
+                            <label for="e-mail">이메일<span>*</span></label>
+                            <input class="text-box" id="e-mail" type="text" placeholder="예) kivworld@kiv.co.kr">
+                        </div>
+                        <div class="join-form__item">
+                            <label for="birth">생년월일<span>*</span></label>
+                            <input class="text-box" id="birth" type="text" placeholder="예) 900507">
+                        </div>
+                        <div class="join-form__item">
+                            <label for="address">주소<span>*</span></label>
+                            <input id="address" type="text" class="text-box address"><span class="address--hyphen"></span><input type="text" class="text-box address"><button class="address-buttom">우편번호</button>
+                            <input class="text-box address__top" type="text">
+                            <input class="text-box address__bottom" type="text" placeholder="상세 주소 입력">
+                        </div>
+                        <div class="join-form__item phone-number__wrap">
+                            <label>휴대폰<span>*</span></label>
+                            <select class="phone-number">
+                                <option>선택</option>
+                                <option>010</option>
+                                <option>011</option>
+                                <option>070</option>
+                                <option>010</option>
+                            </select>
+                            <input class="text-box phone-number__text" type="text">
+                            <input class="text-box phone-number__text" type="text">
+                        </div>
+                        <div class="join-form__item phone-number__wrap">
+                            <label>전화번호(자택)</label>
+                            <select class="phone-number">
+                                <option>선택</option>
+                                <option>010</option>
+                                <option>011</option>
+                                <option>070</option>
+                                <option>010</option>
+                            </select>
+                            <input type="text" class="text-box phone-number__text">
+                            <input type="text" class="text-box phone-number__text">
+                        </div>
+                        <div class="join-form__check">
+                            <input type="checkbox" class="square-checkbox"><span>로봇이 아닙니다.</span>
+                        </div>
+                        <hr class="line-bottom">
+                        <button class="join-form__send">가입하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="footer__inner">
+                <div class="footer-menu__wrap">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__anchor">이용약관</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__anchor">개인정보처리방침</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__anchor">이메일주소 무단수집거부</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">COPYRIGHT@UI_LAB</div>
+            </div>
+        </div>
+    </div>
+
+<!-- script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/common.js"></script>
+</body>
+</html>
