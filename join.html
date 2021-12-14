@@ -11,7 +11,7 @@
     <div class="wrap">
         <div id="header" class="header">
             <div class="header__inner">
-                <div class="navigation"><a href="#"><img src="./images/common/icon_menu.png" alt="전체메뉴"></a></div>
+                <div class="navigation"><a class="navigation__anchor" href="#"><img src="./images/common/icon_menu.png" alt="전체메뉴"></a></div>
             </div>
             <div class="gnb-wrap">
                 <div class="gnb">
@@ -85,7 +85,7 @@
             <div class="section">
                 <div class="section__inner">
                     <hr class="line-top">
-                    <div class="join-form">
+                    <form name="join-form" class="join-form">
                         <div class="join-form__item">
                             <label for="id">아이디<span>*</span></label>
                             <input class="text-box" id="id" type="text" placeholder="4 ~ 15자의 영문-숫자만 혼용만 가능">
@@ -104,7 +104,7 @@
                         </div>
                         <div class="join-form__item">
                             <label for="e-mail">이메일<span>*</span></label>
-                            <input class="text-box" id="e-mail" type="text" placeholder="예) kivworld@kiv.co.kr">
+                            <input class="text-box" id="e-mail" type="email" placeholder="예) kivworld@kiv.co.kr">
                         </div>
                         <div class="join-form__item">
                             <label for="birth">생년월일<span>*</span></label>
@@ -118,34 +118,34 @@
                         </div>
                         <div class="join-form__item phone-number__wrap">
                             <label for="phone">휴대폰<span>*</span></label>
-                            <select class="phone-number">
+                            <select id="phone" class="phone-number">
                                 <option>선택</option>
                                 <option>010</option>
                                 <option>011</option>
                                 <option>070</option>
                                 <option>010</option>
                             </select>
-                            <input id="phone" class="text-box phone-number__text" type="tel">
-                            <input class="text-box phone-number__text" type="tel">
+                            <input class="text-box phone-number__text" type="tel" title="핸드폰번호둘째자리" maxlength="4">
+                            <input class="text-box phone-number__text" type="tel" title="핸드폰번호셋째자리" maxlength="4">
                         </div>
                         <div class="join-form__item phone-number__wrap">
                             <label for="tel">전화번호(자택)</label>
-                            <select class="phone-number">
+                            <select id="tel" class="phone-number">
                                 <option>선택</option>
                                 <option>010</option>
                                 <option>011</option>
                                 <option>070</option>
                                 <option>010</option>
                             </select>
-                            <input id="tel" type="tel" class="text-box phone-number__text">
-                            <input type="tel" class="text-box phone-number__text">
+                            <input id="tel" type="tel" class="text-box phone-number__text" title="전화번호둘째자리" maxlength="4">
+                            <input type="tel" class="text-box phone-number__text" title="전화번호셋째자리" maxlength="4">
                         </div>
                         <label for="not-robot" class="join-form__check">
                             <input id="not-robot" type="checkbox" class="square-checkbox square-checkbox--captcha"><label for="not-robot">로봇이 아닙니다.</label>
                         </label>
                         <hr class="line-bottom">
                         <button class="join-form__send">가입하기</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

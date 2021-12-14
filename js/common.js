@@ -1,7 +1,9 @@
 $(document).ready(function(){
     $('.menu__anchor').click(function(){
-        $(this).parent().toggleClass('active');
-        $(this).parent().children('.menu__2depth').slideToggle();
+        $('.menu__item').removeClass('active');
+        $('.menu__2depth').slideUp();
+        $(this).parent().addClass('active');
+        $(this).parent().children('.menu__2depth').slideDown();
     });
     $('.navigation').click(function(){
         $('.gnb-wrap').addClass('active');
