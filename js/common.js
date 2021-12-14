@@ -1,9 +1,21 @@
 $(document).ready(function(){
-    $('.menu__anchor').click(function(){
-        $('.menu__item').removeClass('active');
+    $('.menu__anchor').click(function(event){
         $('.menu__2depth').slideUp();
-        $(this).parent().addClass('active');
-        $(this).parent().children('.menu__2depth').slideDown();
+
+        if($(this).parent().children('.menu__2depth').is(':hidden')){
+            $(this).parent().children('.menu__2depth').slideDown();
+        }else {
+            $(this).parent().children('.menu__2depth').slideUp();
+        }
+        if(event.currentTarget == event.target){
+            $(this).parent().addClass('active');
+        } else {
+            $(this).parent().removeClass('active');
+        }
+        if($('.menu__item').hasClass('active') == false){
+            // $(this).parent().removeClass('active');
+            $('.menu__item').removeClass('active');
+        }
     });
     $('.navigation').click(function(){
         $('.gnb-wrap').addClass('active');
