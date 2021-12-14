@@ -10,6 +10,16 @@ $(document).ready(function(){
     $('.menu__close').click(function(){
         $('.gnb-wrap').removeClass('active');
         $('body').removeClass('active');
+        $('.menu__2depth').slideUp();
+        $('.menu__item').removeClass('active');
+    });
+    $('.gnb-wrap').click(function(e){
+        if(e.target == e.currentTarget){
+            $('.gnb-wrap').removeClass('active');
+            $('body').removeClass('active');
+            $('.menu__2depth').slideUp();
+            $('.menu__item').removeClass('active');
+          }
     });
     // 전체동의 체크
     $('.terms-wrap').on('click', '.all-agreed', function(){

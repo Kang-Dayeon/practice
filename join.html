@@ -117,7 +117,7 @@
                             <input class="text-box address__bottom" type="text" placeholder="상세 주소 입력">
                         </div>
                         <div class="join-form__item phone-number__wrap">
-                            <label>휴대폰<span>*</span></label>
+                            <label for="phone">휴대폰<span>*</span></label>
                             <select class="phone-number">
                                 <option>선택</option>
                                 <option>010</option>
@@ -125,11 +125,11 @@
                                 <option>070</option>
                                 <option>010</option>
                             </select>
-                            <input class="text-box phone-number__text" type="text">
-                            <input class="text-box phone-number__text" type="text">
+                            <input id="phone" class="text-box phone-number__text" type="tel">
+                            <input class="text-box phone-number__text" type="tel">
                         </div>
                         <div class="join-form__item phone-number__wrap">
-                            <label>전화번호(자택)</label>
+                            <label for="tel">전화번호(자택)</label>
                             <select class="phone-number">
                                 <option>선택</option>
                                 <option>010</option>
@@ -137,12 +137,12 @@
                                 <option>070</option>
                                 <option>010</option>
                             </select>
-                            <input type="text" class="text-box phone-number__text">
-                            <input type="text" class="text-box phone-number__text">
+                            <input id="tel" type="tel" class="text-box phone-number__text">
+                            <input type="tel" class="text-box phone-number__text">
                         </div>
-                        <div class="join-form__check">
-                            <input type="checkbox" class="square-checkbox square-checkbox--captcha"><span>로봇이 아닙니다.</span>
-                        </div>
+                        <label for="not-robot" class="join-form__check">
+                            <input id="not-robot" type="checkbox" class="square-checkbox square-checkbox--captcha"><label for="not-robot">로봇이 아닙니다.</label>
+                        </label>
                         <hr class="line-bottom">
                         <button class="join-form__send">가입하기</button>
                     </div>
