@@ -1,21 +1,13 @@
 $(document).ready(function(){
-    $('.menu__anchor').click(function(event){
-        $('.menu__2depth').slideUp();
-
-        if($(this).parent().children('.menu__2depth').is(':hidden')){
-            $(this).parent().children('.menu__2depth').slideDown();
-        }else {
-            $(this).parent().children('.menu__2depth').slideUp();
+    $('.menu__anchor').on('click', function() {
+        function slideDown(target) {
+          slideUp();
+          $(target).addClass('active').next().slideDown();
         }
-        if(event.currentTarget == event.target){
-            $(this).parent().addClass('active');
-        } else {
-            $(this).parent().removeClass('active');
+        function slideUp() {
+          $('.menu__anchor').removeClass('active').next().slideUp();
         }
-        if($('.menu__item').hasClass('active') == false){
-            // $(this).parent().removeClass('active');
-            $('.menu__item').removeClass('active');
-        }
+        $(this).hasClass('active') ? slideUp() : slideDown(this);
     });
     $('.navigation').click(function(){
         $('.gnb-wrap').addClass('active');
@@ -25,14 +17,14 @@ $(document).ready(function(){
         $('.gnb-wrap').removeClass('active');
         $('body').removeClass('active');
         $('.menu__2depth').slideUp();
-        $('.menu__item').removeClass('active');
+        $('.menu__anchor').removeClass('active');
     });
     $('.gnb-wrap').click(function(e){
         if(e.target == e.currentTarget){
             $('.gnb-wrap').removeClass('active');
             $('body').removeClass('active');
             $('.menu__2depth').slideUp();
-            $('.menu__item').removeClass('active');
+            $('.menu__anchor').removeClass('active');
           }
     });
     // 전체동의 체크

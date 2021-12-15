@@ -88,11 +88,11 @@
                     <form name="join-form" class="join-form">
                         <div class="join-form__item">
                             <label for="id">아이디<span>*</span></label>
-                            <input class="text-box" id="id" type="text" placeholder="4 ~ 15자의 영문-숫자만 혼용만 가능">
+                            <input class="text-box" id="id" type="text" placeholder="4 ~ 15자의 영문-숫자만 혼용가능" title="4~15자 영문-숫자만 혼용가능">
                         </div>
                         <div class="join-form__item">
                             <label for="password">비밀번호<span>*</span></label>
-                            <input class="text-box" id="password" type="password" placeholder="9 ~ 20자 이하, 영문-숫자-특수문자 조합">
+                            <input class="text-box" id="password" type="password" placeholder="9 ~ 20자 이하, 영문-숫자-특수문자 조합" title="9 ~ 20자 이하, 영문-숫자-특수문자 조합">
                         </div>
                         <div class="join-form__item">
                             <label for="passwordCheck">비밀번호확인<span>*</span></label>
@@ -108,13 +108,13 @@
                         </div>
                         <div class="join-form__item">
                             <label for="birth">생년월일<span>*</span></label>
-                            <input class="text-box" id="birth" type="text" placeholder="예) 900507">
+                            <input class="text-box" id="birth" type="text" placeholder="예) 900507" title="예) 900507">
                         </div>
                         <div class="join-form__item">
                             <label for="address">주소<span>*</span></label>
-                            <input id="address" type="text" class="text-box address"><span class="address--hyphen"></span><input type="text" class="text-box address"><button class="address-buttom">우편번호</button>
-                            <input class="text-box address__top" type="text">
-                            <input class="text-box address__bottom" type="text" placeholder="상세 주소 입력">
+                            <input id="address" type="text" class="text-box address" title="우편번호 첫째자리"><span class="address--hyphen"></span><input type="text" class="text-box address" title="우편번호 둘째자리"><button class="address-buttom">우편번호</button>
+                            <input class="text-box address__top" type="text" title="주소">
+                            <input class="text-box address__bottom" type="text" placeholder="상세 주소 입력" title="상세 주소 입력">
                         </div>
                         <div class="join-form__item phone-number__wrap">
                             <label for="phone">휴대폰<span>*</span></label>
@@ -125,8 +125,8 @@
                                 <option>070</option>
                                 <option>010</option>
                             </select>
-                            <input class="text-box phone-number__text" type="tel" maxlength="4">
-                            <input class="text-box phone-number__text" type="tel" maxlength="4">
+                            <input class="text-box phone-number__text" type="tel" maxlength="4" title="휴대폰번호 둘째자리">
+                            <input class="text-box phone-number__text" type="tel" maxlength="4" title="휴대폰번호 셋째자리">
                         </div>
                         <div class="join-form__item phone-number__wrap">
                             <label for="tel">전화번호(자택)</label>
@@ -137,8 +137,8 @@
                                 <option>070</option>
                                 <option>010</option>
                             </select>
-                            <input type="tel" class="text-box phone-number__text" maxlength="4">
-                            <input type="tel" class="text-box phone-number__text" maxlength="4">
+                            <input type="tel" class="text-box phone-number__text" maxlength="4" title="전화번호 둘째자리">
+                            <input type="tel" class="text-box phone-number__text" maxlength="4" title="전화번호 셋째자리">
                         </div>
                         <label for="not-robot" class="join-form__check">
                             <input id="not-robot" type="checkbox" class="square-checkbox square-checkbox--captcha"><label for="not-robot">로봇이 아닙니다.</label>

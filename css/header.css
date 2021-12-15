@@ -110,7 +110,8 @@
     background-size:23px 23px;
     content:'';
 }
-.menu__item.active .menu__anchor:after{
+/* .menu__item.active  */
+.menu__anchor.active:after{
     position:absolute;
     top:50%;
     right:15px;
@@ -121,7 +122,8 @@
     background-size:23px 23px;
     content:'';
 }
-.menu__item.active .menu__anchor{
+/* .menu__item.active  */
+.menu__anchor.active{
     color:#da692a;
 }
 .menu__2depth{
