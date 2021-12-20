@@ -55,7 +55,8 @@
     background-color:#fff;
 }
 .gnb__top{
-    width:100%;
+    display:block;
+    width:calc(100% - 200px);
     height:50px;
     font-size:15px;
 }
